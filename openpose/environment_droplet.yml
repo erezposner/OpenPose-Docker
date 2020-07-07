@@ -1,0 +1,27 @@
+name: base
+channels:
+  - pytorch3d
+  - pytorch
+  - open3d-admin
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - pip=20.0.2=py37_3
+  - flake8=3.7.9=py37_0
+  - isort=4.3.21=py37_0  
+  - pytorch3d=0.2.0=py37_cu101_pyt15
+  - scikit-image=0.17.1=py37h0da4684_0 
+  - python=3.7.7=hcf32534_0_cpython
+  - pytorch=1.5.0=py3.7_cuda10.1.243_cudnn7.6.3_0
+  - torchvision=0.6.0=py37_cu101
+
+  - pip:
+      - smplpytorch
+      - dominate>=2.3.1
+      - visdom>=0.1.8.3
+      - smplx==0.1.14
+      - chumpy==0.69
+      - opencv-python
+      
+    
