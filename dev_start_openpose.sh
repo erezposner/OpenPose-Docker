@@ -11,7 +11,7 @@ docker stop portainer
 docker stop openpose
 docker rm portainer
 docker rm openpose
-docker build -t openpose openpose/.
+docker build -t openpose Dockerfile/.
 #Running
 docker volume create portainer_dat
 if [ ! "$(docker ps -q -f name=portainer)" ]; then
