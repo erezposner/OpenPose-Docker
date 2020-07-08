@@ -2,7 +2,7 @@ FROM nvcr.io/nvidia/pytorch:20.03-py3
 WORKDIR /
 ENV DEBIAN_FRONTEND=noninteractive
 RUN mkdir /workspace/reqs
-COPY environment_droplet.yml /workspace/reqs/
+COPY Dockerfile/environment_droplet.yml /workspace/reqs/
 RUN conda env update --name base -f /workspace/reqs/environment_droplet.yml 
 RUN /bin/bash -c "conda init bash"
 RUN /bin/bash -c "source ~/.bashrc"
